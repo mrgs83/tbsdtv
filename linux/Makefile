@@ -20,7 +20,10 @@ TARDIR += include/dt-bindings/media/
 TARDIR += include/linux/platform_data/media/
 TARFILES += include/linux/mmc/sdio_ids.h
 TARFILES += include/sound/aci.h
+TARFILES += include/linux/usb/uvc.h
 TARFILES += include/uapi/linux/usb/video.h
+
+
 TARFILES += include/linux/via-core.h
 TARFILES += include/linux/ti_wilink_st.h
 TARFILES += include/linux/of_graph.h
@@ -39,7 +42,6 @@ TARFILES += include/misc/altera.h
 TARDIR += include/uapi/linux/dvb/
 TARFILES += include/uapi/linux/lirc.h
 TARFILES += include/uapi/linux/videodev2.h
-TARFILES += include/uapi/linux/meye.h
 TARFILES += include/uapi/linux/ivtv.h
 TARFILES += include/uapi/linux/ivtvfb.h
 TARFILES += include/uapi/linux/max2175.h

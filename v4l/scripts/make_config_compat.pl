@@ -97,7 +97,6 @@ sub check_other_dependencies()
 	check_files_for_func("time64_to_tm", "NEED_TIME64_TO_TM", "include/linux/time.h");
 	check_files_for_func("READ_ONCE", "NEED_READ_ONCE", "include/linux/compiler.h", "include/asm-generic/rwonce.h");
 	check_files_for_func("usb_urb_ep_type_check", "NEED_USB_EP_CHECK", "include/linux/usb.h");
-	check_files_for_func("get_user_pages_longterm", "NEED_GET_USER_PAGES_LONGTERM", "include/linux/mm.h");
 	check_files_for_func("__pfn_to_phys", "NEED_PFN_TO_PHYS", "include/asm-generic/memory_model.h");
 	check_files_for_func("next_pseudo_random32", "NEED_NEXT_PSEUDO_RANDOM32", "include/linux/random.h", "include/linux/prandom.h");
 	check_files_for_func("memdup_user_nul", "NEED_MEMDUP_USER_NUL", "include/linux/string.h");
@@ -131,7 +130,7 @@ sub check_other_dependencies()
 	check_files_for_func("i2c_new_scanned_device", "NEED_I2C_NEW_SCANNED_DEVICE", "include/linux/i2c.h");
 	check_files_for_func("i2c_new_client_device", "NEED_I2C_NEW_CLIENT_DEVICE", "include/linux/i2c.h");
 	check_files_for_func("i2c_client_has_driver", "NEED_I2C_CLIENT_HAS_DRIVER", "include/linux/i2c.h");
-	check_files_for_func("untagged_addr", "NEED_UNTAGGED_ADDR", "include/linux/mm.h");
+	check_files_for_func("untagged_addr", "NEED_UNTAGGED_ADDR", "include/linux/uaccess.h");
 	check_files_for_func("compat_ptr_ioctl", "NEED_COMPAT_PTR_IOCTL", "include/linux/fs.h");
 	check_files_for_func("ns_to_timespec64", "NEED_TIMESPEC64", "include/linux/time64.h");
 	check_files_for_func("sizeof_field", "NEED_SIZEOF_FIELD", "include/linux/stddef.h");
@@ -143,7 +142,7 @@ sub check_other_dependencies()
 	check_files_for_func("sched_set_fifo", "NEED_SCHED_SET_FIFO", "include/linux/sched.h");
 	check_files_for_func("dma_map_sgtable", "NEED_DMA_MAP_SGTABLE", "include/linux/dma-mapping.h");
 	check_files_for_func("in_compat_syscall", "NEED_IN_COMPAT_SYSCALL", "include/linux/compat.h");
-	check_files_for_func("dev_err_probe", "NEED_DEV_ERR_PROBE", "include/linux/device.h");
+	check_files_for_func("dev_err_probe", "NEED_DEV_ERR_PROBE", "include/linux/device.h", "include/linux/dev_printk.h");
 	check_files_for_func("pm_runtime_resume_and_get", "NEED_PM_RUNTIME_RESUME_AND_GET", "include/linux/pm_runtime.h");
 	check_files_for_func("vma_lookup", "NEED_VMA_LOOKUP", "include/linux/mm.h");
 	check_files_for_func("HZ_PER_MHZ", "NEED_HZ_PER_MHZ", "include/linux/units.h");

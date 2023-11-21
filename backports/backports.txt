@@ -28,6 +28,44 @@ add drx39xxj.patch
 add ccs.patch
 add rc-cec.patch
 
+[6.5.1023]
+add v6.5_pcm_copy.patch
+
+[6.4.1023]
+add v6.4_pin_user_pages.patch
+
+[6.3.1023]
+add v6.3_class_create.patch
+add v6.3_check_endpoint.patch
+
+[6.2.1023]
+add v6.2_class.patch
+add v6.2_remove.patch
+add v6.2_probe.patch
+add v6.2_probe_tbs.patch
+add v6.2_v4l2-core.patch
+
+[6.1.1023]
+add v6.1_class.patch
+add v6.1_i2c_probe.patch
+add v6.1_videobuf2.patch
+add v6.1_timer.patch
+add v6.1_ipu3.patch
+#add v6.1_i2c_probe_tbs.patch
+
+[6.0.1023]
+add v6.0_i2c_remove.patch
+add v6.0_v4l2-tpg.patch
+add v6.0_pt3.patch
+add v6.0_testdrv.patch
+add v6.0_i2c_remove_tbs.patch
+
+[5.18.1023]
+add v5.18_rc.patch
+add v5.18_rc2.patch
+add v5.18_v4l2.patch
+add v5.18_misc.patch
+
 [5.17.1023]
 add v5.17_spi.patch
 add v5.17_iosys.patch
@@ -40,7 +78,6 @@ add v5.15_container_of.patch
 add v5.14_bus_void_return.patch
 
 [5.13.1023]
-add v5.13_atmel.patch
 add v5.13_stk1160.patch
 
 [5.12.1023]
@@ -78,11 +115,16 @@ add v5.5_go7007.patch
 add v5.4_revert_spi_transfer.patch
 add v5.4_async.patch
 
+[5.3.1023]
+add v5.3_dma_resv.patch
+add v5.3_device_match_fwnode.patch
+
 [5.1.1023]
 add v5.1_vm_map_pages.patch
 add v5.1_devm_i2c_new_dummy_device.patch
 
 [5.0.1023]
+add v5.0_saa7146.patch
 add v5.0_ipu3-cio2.patch
 add v5.0_time32.patch
 add v5.0_gpio.patch
@@ -94,6 +136,7 @@ add v4.20_access_ok.patch
 add v4.18_fwnode_args_args.patch
 add v4.18_ccs_bitops.patch
 add v4.18_vb2_map_atomic.patch
+add v4.18_ida_simple.patch
 
 [4.17.1023]
 add v4.17_i2c_check_num_msgs.patch
@@ -115,52 +158,3 @@ delete v4.13_fwnode_graph_get_port_parent.patch
 add v4.13_remove_nospec_h.patch
 add v4.13_drmP.patch
 add v4.13_fwnode_graph_get_port_parent.patch
-
-[4.12.1023]
-add v4.12_revert_solo6x10_copykerneluser.patch
-
-[4.11.1023]
-add v4.11_drop_drm_file.patch
-add v4.11_vb2_kmap.patch
-add v4.11_pwc.patch
-
-[4.10.1023]
-add v4.10_sched_signal.patch
-add v4.10_fault_page.patch
-add v4.10_refcount.patch
-
-[4.9.1023]
-add v4.9_mm_address.patch
-add v4.9_dvb_net_max_mtu.patch
-add v4.9_probe_new.patch
-add v4.9_vivid_ktime.patch
-
-[4.8.1023]
-add v4.8_user_pages_flag.patch
-add v4.8_em28xx_bitfield.patch
-add v4.8_dma_map_resource.patch
-add v4.8_drm_crtc.patch
-
-[4.7.1023]
-add v4.7_dma_attrs.patch
-add v4.7_pci_alloc_irq_vectors.patch
-add v4.7_copy_to_user_warning.patch
-add v4.7_objtool_warning.patch
-
-[4.6.1023]
-add v4.6_i2c_mux.patch
-
-[4.5.1023]
-add v4.5_gpiochip_data_pointer.patch
-add v4.5_get_user_pages.patch
-add v4.5_uvc_super_plus.patch
-add v4.5_copy_to_user_warning.patch
-add v4.5_vb2_cpu_access.patch
-
-[4.4.1023]
-add v4.4_gpio_chip_parent.patch
-add v4.4_user_pages_flag.patch
-
-[4.3.1023]
-delete v4.4_user_pages_flag.patch
-add v4.3_bt87x_const_fix.patch
